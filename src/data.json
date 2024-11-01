@@ -1,0 +1,70 @@
+{
+    "products":[
+   
+{ 
+    "id": 1,
+    "heading":"Syltherine",
+    "peragrap":"Stylish cafe chair",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-5.jpg.jpg"
+},
+
+{
+    "id": 2,
+    "heading":"Leviosa",
+    "peragrap":"Stylish cafe chair",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-6.jpg.jpg"
+},
+
+{
+     "id": 3,
+    "heading":"Lolito",
+    "peragrap":"Luxury big sofa",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-7.jpg.jpg"
+},
+
+{
+     "id": 4,
+    "heading":"Respira",
+    "peragrap":"Outdoor bar table and stool",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-8.jpg.jpg"
+},
+
+{
+     "id": 5,
+    "heading":"Grifo",
+    "peragrap":"night lamp",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-9.jpg.jpg"
+},
+
+{
+     "id": 6,
+    "heading":"Muggo",
+    "peragrap":"smoll mug",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-10.jpg.jpg"
+},
+
+{
+     "id": 7,
+    "heading":"Pingky",
+    "peragrap":"Cute bed set",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-11.jpg.jpg"
+},
+
+{
+     "id": 8,
+    "heading":"potty",
+    "peragrap":"Minimalist flower pot",
+    "mrp":"Rp 2.500.000",
+    "image":"./imges/u1-12.jpg.jpg"
+}
+
+
+]
+}
