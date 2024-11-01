@@ -8,10 +8,10 @@
 
 </head>
 <body>
-    <h1 class="text-2xl font">Our Products</h1>
+    <h1 class="text-2xl font-bold text-center border-b-2 pb-2 ">Our Products</h1>
     
-<div id="main" class="border-2"></div>
-<div class=""></div>
+<div id="main" class="border-2 flex flex-wrap gap-5"></div>
+
 
 <h1></h1>
     <script>
@@ -20,8 +20,12 @@
         .then((response) => response.json())
         .then(data => {
             data.products.map((item) => {
-                main.innerHTML += `<img src=${item.image} alt="images"> <h3>Id : ${item.id} </h3> <h2>${item.heading} </h2> <p>${item.peragrap} </p> <h3>Mrp : ${item.mrp} </h3> `
-                               
+                let newDiv = document.createElement('div')
+                newDiv.innerHTML += ` <img src=${item.image} alt="images"> <h3>Id : ${item.id} </h3> <h2>${item.heading} </h2> <p>${item.peragrap} </p> <h3>Mrp : ${item.mrp} </h3>  ` 
+                main.appendChild(newDiv)  
+                
+                
+
                 
             })        
         })
