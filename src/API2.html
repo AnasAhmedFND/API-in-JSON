@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API in eCommerce</title>
     <link href="./output.css" rel="stylesheet">
 
 </head>
@@ -12,24 +12,37 @@
     
 <div id="main" class="border-2 flex flex-wrap gap-5"></div>
 
+<h1 class="text-center font-bold text-3xl mt-3 ">Browse The Range</h1>
+<div id="main2" class="mt-10 flex    justify-between"></div>
+
 
 <h1></h1>
     <script>
         let main = document.getElementById("main")
+        let main2 = document.getElementById('main2')
         fetch('data.json')
         .then((response) => response.json())
         .then(data => {
             data.products.map((item) => {
                 let newDiv = document.createElement('div')
-                newDiv.innerHTML += ` <img src=${item.image} alt="images"> <h3>Id : ${item.id} </h3> <h2>${item.heading} </h2> <p>${item.peragrap} </p> <h3>Mrp : ${item.mrp} </h3>  ` 
-                main.appendChild(newDiv)  
+                newDiv.innerHTML += ` <img src=${item.image} alt="images"> <h3>Id : ${item.id} </h3> <h2>${item.heading} </h2> <p>${item.peragrap} </p> <h3>Mrp : ${item.mrp} </h3> <h1>${item.imges} </h1>` 
+                main.appendChild(newDiv);                                             
                 
-                
+            }) 
+            data.browse.map((item2) => {
+                let newItem = document.createElement('div')
+                newItem.innerHTML += `<img src=${item2.imges} alt="img">  <h1>${item2.heading} </h1>`
+                main2.appendChild(newItem);
+                newItem.style.textAlign = 'center';
+                newItem.style.marginTop = '10px'
+               
 
-                
-            })        
+            })  
+               
         })
-     
+
+
+    
     </script>
 </body>
 </html>

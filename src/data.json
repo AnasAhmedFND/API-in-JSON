@@ -65,6 +65,33 @@
     "image":"./imges/u1-12.jpg.jpg"
 }
 
+],
 
-]
+
+    "browse":[
+    
+        {
+            "heading":"Dining",
+            "imges":"./imges/u1-img-2.jpg.jpg"
+        },
+    
+        {
+            "heading":"Living",
+            "imges":"./imges/u1-img-3.jpg.jpg"
+        },
+        {
+            "heading":"Bedroom",
+            "imges":"./imges/u1-img-4.jpg.jpg"
+        }
+    
+    ]
+    
+    
+
+
+
+
 }
+
+
+
