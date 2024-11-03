@@ -10,16 +10,16 @@
 <body>
     <h1 class="text-2xl font-bold text-center border-b-2 pb-2 ">Our Products</h1>
     
-<div id="main" class="border-2 flex flex-wrap gap-5 md:flex-col  md:items-center  sm:flex-col sm:items-center lg:col-span-2 lg:flex-wrap  "></div>
+<div id="main" class="border-2 flex flex-wrap gap-5 "></div>
 
-<h1 class="text-center font-bold text-3xl mt-3 md:text-xl lg:flex ">Browse The Range</h1>
-<div id="main2" class="mt-10 flex justify-between md:flex-col  md:items-center  sm:flex-col sm:items-center lg:flex-wrap"></div>
+<h1 class="text-center font-bold text-3xl mt-3 ">Browse The Range</h1>
+<div id="main2" class="mt-10 flex justify-between "></div>
 
 <h1 class="text-5xl font-bold text-center mt-10 pb-3">Blog</h1>
 <div id="main3" class="flex gap-10"></div>
 <div id="blog" class="flex flex-col gap-5"></div>
 
-<div id="recent" class="felx flex-col gap-[10px]  "></div>
+<div id="recent" class="felx flex-col gap-10  h-[80%]"></div>
 
 
 <p></p>
@@ -53,26 +53,24 @@
                 newBlogDiv.innerHTML += ` <img src=${item.imges} alt="img">  <h1>${item.heading} </h1> <p>${item.peragrap} </p> <p>${item.button} </p>`
                 newMainBlog.appendChild(newBlogDiv);
                 main3.appendChild(newMainBlog)
-                newBlogDiv.style.border = '2px solid green'
-                newBlogDiv.style.width = '800px'
-                newBlogDiv.style.color = ' green' 
-               
               
-                
-                                            
-
+                newBlogDiv.style.width = '800px'
+                newBlogDiv.style.color = ' green'
+                 
+                                       
+                                                            
             })
-            data.Recent.map((item) => {
+            data.recent.map((item) => {
                 let newMain = document.getElementById('recent')
                 let newDiv2 = document.createElement('div');
                 newDiv2.innerHTML = ` <img src=${item.image} alt="img"> <h1>${item.heading} </h1> <p>${item.peragrap} </p> `
                 newMain.appendChild(newDiv2);
-                main3.appendChild(newMain);
-                            
-                newDiv2.style.width = '300px'
-               
+                main3.appendChild(newMain);                            
+                newDiv2.style.width = '300px'                             
+                newDiv2.style.padding = '10px'
+                newDiv2.style.marginTop = '10px'
                 
-                
+
 
             })
                
